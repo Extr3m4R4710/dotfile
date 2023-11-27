@@ -1,0 +1,38 @@
+body {
+    --bg_color: #000000;
+    --fg_color: #55FF55;
+    --fg_faded: #AAAAAA;
+    --fg_dark: var(--accent);
+    --fg_nav: var(--accent);
+
+    --bg_panel: #0C0C0C;
+    --bg_elements: #000000;
+    --bg_overlays: var(--bg_panel);
+    --bg_hover: #131313;
+
+    --grey: #E2E2E2;
+    --dark_grey: #4E4E4E;
+    --darker_grey: #272727;
+    --darkest_grey: #212121;
+    --border_grey: #7D7D7D;
+
+
+    --accent: #00AA00;
+    --accent_light: #00AA00;
+    --accent_dark: #00AA00;
+    --accent_border: #55FFFF;
+
+    --play_button: #55FFFF;
+    --play_button_hover: #55FFFF;
+
+    --more_replies_dots: #AAAAAA;
+    --error_red: #AA0000;
+
+    --verified_blue: #00AA00;
+    --icon_text: #AA5500;
+
+    --tab: #00AA00;
+    --tab_selected: #AA5500;
+
+    --profile_stat: #AA5500;
+}
