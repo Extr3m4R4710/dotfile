@@ -1,47 +1,59 @@
-call plug#begin()
-
-Plug 'morhetz/gruvbox'
-Plug 'romainl/Apprentice'
-Plug 'AlessandroYorba/Alduin'
-Plug 'jeetsukumaran/vim-nefertiti'
-Plug 'racer-rust/vim-racer'
-Plug 'rust-lang/rust.vim'
-Plug 'vim-crystal/vim-crystal'
-Plug 'arcticicestudio/nord-vim'
-Plug 'scrooloose/nerdtree'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ulwlu/elly.vim'
-Plug 'masahiko-ofgp/unsui'
-Plug 'aktersnurra/no-clown-fiesta.nvim'
-Plug 'matveyt/vim-modest'
-
-
-call plug#end()
-
-set number
-set expandtab
-set autoindent
-set softtabstop=4
-set shiftwidth=2
-set tabstop=4
-set cursorline
+set fo+=t
+set t_Co=256
+set nocursorline
 set cursorcolumn
-set wildmenu
-set wildmode=full
+set title
+set bs=2
+set noautoindent
+set ruler
+set shortmess=aoOTI
+set nocompatible
+set showmode
 set splitbelow
+set nomodeline
+set showcmd
+set showmatch
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set cinoptions=(0,m1,:1
+set tw=80
+set formatoptions=tcqro2
+set smartindent
+set laststatus=2
+set nomodeline
+set clipboard=unnamed
+set softtabstop=2
+set showtabline=1
+set sidescroll=5
+set scrolloff=4
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set foldmethod=marker
+set ttyfast
+set history=10000
+set hidden
+set colorcolumn=81
+set number
+set complete=.,w,b,u,t
+set completeopt=longest,menuone,preview
+set noswapfile
+set foldlevelstart=0
+set wildmenu
+set wildmode=list:longest,full
+set statusline=%{getcwd()}\/\%f%=%-14.(%l,%c%V%)\ %P
+set autoread
+set conceallevel=2
+set concealcursor=vin
 syntax on
-colorscheme modest
-set bg=dark
 
-"nvimのマウスクリックを有効化
+"enable mous
 set mouse=a
-"nvimを閉じた後のカーソル置換を修正
-set guicursor=
-"Shift + Tabで逆タブ
-inoremap <S-Tab> <C-d>
 
-"空白を出力
+"printing tab and space
 set list listchars=tab:>\ ,trail:+,eol:$
 
-"行末に達したら次の行に折り返す
+"wrap at line end
 set whichwrap+=<,>,[,]
