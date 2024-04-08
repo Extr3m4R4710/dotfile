@@ -13,8 +13,8 @@ set splitbelow
 set nomodeline
 set showcmd
 set showmatch
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set cinoptions=(0,m1,:1
 set tw=80
